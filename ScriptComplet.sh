@@ -16,12 +16,12 @@ cd boost_1_57_0/
 #Installing boost-jam package
 cd /home/osrm
 #copy des fichier
-#wget ftp://ftp.pbone.net/mirror/ftp5.gwdg.de/pub/opensuse/repositories/home:/jblunck:/md/CentOS_CentOS-6/x86_64/boost-jam-1.46.1-10.1.x86_64.rpm
+wget ftp://ftp.pbone.net/mirror/ftp5.gwdg.de/pub/opensuse/repositories/home:/jblunck:/md/CentOS_CentOS-6/x86_64/boost-jam-1.46.1-10.1.x86_64.rpm
 rpm -ivh boost-jam-1.50.0-17.14.x86_64.rpm
 
 #Installing boost-build package
 #copy des fichier
-# ftp://ftp.pbone.net/mirror/ftp5.gwdg.de/pub/opensuse/repositories/home:/jblunck:/md/CentOS_CentOS-6/x86_64/boost-build-1.46.1-10.1.x86_64.rpm
+ftp://ftp.pbone.net/mirror/ftp5.gwdg.de/pub/opensuse/repositories/home:/jblunck:/md/CentOS_CentOS-6/x86_64/boost-build-1.46.1-10.1.x86_64.rpm
 rpm -ivh boost-build-1.50.0-17.14.x86_64.rpm
 
 #Installing STXXL package
@@ -87,9 +87,9 @@ make install
 
 #Installing OSRM package
 cd /home/osrm
-wget -O Project-OSRM-0.3.7.zip https://github.com/DennisOSRM/Project-OSRM/archive/v0.3.7.zip
-unzip Project-OSRM-0.3.7.zip
-cd osrm-backend-0.3.7
+wget -O Project-OSRM-4.8.1.zip https://github.com/DennisOSRM/Project-OSRM/archive/v4.8.1.zip
+unzip Project-OSRM-4.8.1.zip
+cd osrm-backend-4.8.1
 sed -i 's| -pedantic||' CMakeLists.txt
 mkdir build
 cd build
