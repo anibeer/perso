@@ -1,9 +1,9 @@
 #!/bin/bash
 
 cd /opt
-wget -O Project-OSRM-4.1.8.zip https://github.com/DennisOSRM/Project-OSRM/archive/v4.1.8.zip
-unzip Project-OSRM-4.1.8.zip osrm-backend
-cd osrm-backend
+wget -O Project-OSRM-4.1.8.zip https://github.com/Project-OSRM/osrm-backend/archive/v4.8.1.zip
+unzip Project-OSRM-4.1.8.zip osrm-backend-4.1.8
+cd osrm-backend-4.1.8
 sed -i 's| -pedantic||' CMakeLists.txt
 mkdir build; cd build
 cmake  -DLUABIND_INCLUDE_DIR=/opt/osrm_infrastructure/luabind-0.9.1/include -DLUABIND_LIBRARY=/opt/osrm_infrastructure/luabind-0.9.1/lib/libluabindd.so \
